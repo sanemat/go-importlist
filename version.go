@@ -1,4 +1,4 @@
-package boilerplate
+package importlist
 
 const version = "0.1.0"
 
