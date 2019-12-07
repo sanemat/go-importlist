@@ -11,7 +11,7 @@ require (
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/mattn/go-isatty v0.0.10 // indirect
 	github.com/motemen/gobump v0.0.0-20190215161939-66ee926e4810
-	github.com/sanemat/go-xgoinstall v0.1.0 // indirect
+	github.com/sanemat/go-xgoinstall v0.1.0
 	github.com/tcnksm/ghr v0.13.0
 	golang.org/x/lint v0.0.0-20191125180803-fdd1cda4f05f
 	golang.org/x/net v0.0.0-20191207000613-e7e4b65ae663 // indirect
