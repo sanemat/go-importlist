@@ -1,6 +1,6 @@
 VERSION = $(shell gobump show -r)
 CURRENT_REVISION = $(shell git rev-parse --short HEAD)
-BUILD_LDFLAGS = "-s -w -X github.com/sanemat/go-boilerplate.revision=$(CURRENT_REVISION)"
+BUILD_LDFLAGS = "-s -w -X github.com/sanemat/go-importlist.revision=$(CURRENT_REVISION)"
 u := $(if $(update),-u)
 
 .PHONY: test
@@ -26,11 +26,11 @@ echo:
 
 .PHONY: build
 build: download
-	go build -ldflags=$(BUILD_LDFLAGS) ./cmd/boilerplate
+	go build -ldflags=$(BUILD_LDFLAGS) ./cmd/import-list
 
 .PHONY: install
 install: download
-	go install -ldflags=$(BUILD_LDFLAGS) ./cmd/boilerplate
+	go install -ldflags=$(BUILD_LDFLAGS) ./cmd/import-list
 
 .PHONY: crossbuild
 crossbuild:
