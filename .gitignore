@@ -17,4 +17,4 @@
 dist
 
 # command binary file
-import-list
+/import-list
