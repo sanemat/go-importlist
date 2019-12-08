@@ -82,6 +82,13 @@ func printVersion(out io.Writer) error {
 
 func importList(data []byte) ([]string, error) {
 	var result []string
-	result = []string{"a", "b"}
+	for _, v := range strings.Split(strings.Replace(string(data), "\r\n", "\n", -1), "\n") {
+		if strings.Contains(v, "_") {
+			split := strings.Split(v, "\"")
+			if len(split) >= 2 {
+				result = append(result, split[1])
+			}
+		}
+	}
 	return result, nil
 }
