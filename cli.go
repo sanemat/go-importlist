@@ -34,8 +34,16 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 	}
 
 	argv = fs.Args()
-	if len(argv) >= 1 {
-		return xerrors.New("We have no subcommand")
+	if len(data) == 0 {
+		if len(argv) >= 2 {
+			return xerrors.New("We have no subcommand")
+		}
+		fmt.Fprintf(outStream, "read gofile")
+	} else {
+		if len(argv) >= 1 {
+			return xerrors.New("We have no subcommand")
+		}
+		fmt.Fprintf(outStream, "read from stdin")
 	}
 	if *nullTerminators {
 		fmt.Fprintf(outStream, "null terminator")
