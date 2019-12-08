@@ -24,6 +24,21 @@ Use [x-go-install](https://github.com/sanemat/go-xgoinstall/)
 import-list -z tools.go | x-go-install -0
 ```
 
+## Motivation
+
+`cat tools.go | grep _ | awk -F'"' '{print $$2}'` is only for unix users.
+
+## Install
+
+### ghg
+
+`ghg get sanemat/go-importlist`
+
+### go install
+
+`go install https://github.com/sanemat/go-importlist/cmd/import-list`
+
+
 ## Design
 
 [design](./design.md)
