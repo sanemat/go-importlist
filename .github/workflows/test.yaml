@@ -39,6 +39,9 @@ jobs:
     - name: deps windows
       run: |
         go env
+        echo %cd%
+        echo %GOPATH%
+        echo %PATH%
         make install-tools
       if: "matrix.os == 'windows-latest'"
     - name: lint
