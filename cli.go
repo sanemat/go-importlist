@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"log"
 
 	"golang.org/x/xerrors"
@@ -33,17 +34,31 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 		return printVersion(outStream)
 	}
 
+	var list []string
+	var err2 error
 	argv = fs.Args()
-	if len(data) == 0 {
+	if len(data) == 0 { // read file
 		if len(argv) != 1 {
 			return xerrors.New("require one target golang file")
 		}
-		fmt.Fprintf(outStream, "read gofile")
-	} else {
+		data2, err := ioutil.ReadFile(argv[0])
+		if err != nil {
+			return err
+		}
+		list, err2 = importList(data2)
+		if err2 != nil {
+			return err2
+		}
+		fmt.Fprint(outStream, list)
+	} else { // stdin
 		if len(argv) >= 1 {
 			return xerrors.New("We have no subcommand")
 		}
-		fmt.Fprintf(outStream, "read from stdin")
+		list, err2 = importList(data)
+		if err2 != nil {
+			return err2
+		}
+		fmt.Fprint(outStream, list)
 	}
 	if *nullTerminators {
 		fmt.Fprintf(outStream, "null terminator")
@@ -54,4 +69,9 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 func printVersion(out io.Writer) error {
 	_, err := fmt.Fprintf(out, "%s v%s (rev:%s)\n", cmdName, version, revision)
 	return err
+}
+
+func importList(data []byte) ([]string, error) {
+	var result []string
+	return result, nil
 }
