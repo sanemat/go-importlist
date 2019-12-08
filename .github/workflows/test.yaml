@@ -37,6 +37,12 @@ jobs:
         path: src/github.com/${{ github.repository }}
     - name: deps
       run: make install-tools
+      if: "matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'"
+    - name: deps windows
+      run: |
+        cd %GOPATH%\src\github.com\${{ github.repository }}
+        make install-tools
+      if: "matrix.os == 'windows-latest'"
     - name: lint
       run: golint -set_exit_status ./...
       if: "matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'"
