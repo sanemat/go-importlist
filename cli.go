@@ -35,29 +35,24 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 		return printVersion(outStream)
 	}
 
-	var list []string
-	var err2 error
 	argv = fs.Args()
-	if len(data) == 0 { // read file
+	if data == nil { // read file
 		if len(argv) != 1 {
 			return xerrors.New("require one target golang file")
 		}
-		data2, err := ioutil.ReadFile(argv[0])
+		var err error
+		data, err = ioutil.ReadFile(argv[0])
 		if err != nil {
 			return err
-		}
-		list, err2 = importList(data2)
-		if err2 != nil {
-			return err2
 		}
 	} else { // stdin
 		if len(argv) >= 1 {
 			return xerrors.New("We have no subcommand")
 		}
-		list, err2 = importList(data)
-		if err2 != nil {
-			return err2
-		}
+	}
+	list, err := importList(data)
+	if err != nil {
+		return err
 	}
 
 	if *nullTerminators {
