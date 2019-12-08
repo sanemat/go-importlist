@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="v0.1.1"></a>
+## [v0.1.1] - 2019-12-08
+### Fix
+- **cli:** change detection of stdin
+
+### Pull Requests
+- Merge pull request [#14](https://github.com/sanemat/go-importlist/issues/14) from sanemat/fix/detection
+
+
 <a name="v0.1.0"></a>
 ## v0.1.0 - 2019-12-08
 ### Chore
@@ -17,6 +26,7 @@
 - **tools:** fix xgoinstall
 
 ### Docs
+- **changelog:** build
 - **credits:** build
 - **design:** overview
 - **readme:** motivation
@@ -46,4 +56,5 @@
 - Merge pull request [#1](https://github.com/sanemat/go-importlist/issues/1) from sanemat/chore/rename
 
 
-[Unreleased]: https://github.com/sanemat/go-importlist/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/sanemat/go-importlist/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/sanemat/go-importlist/compare/v0.1.0...v0.1.1
