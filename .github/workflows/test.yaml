@@ -19,12 +19,14 @@ jobs:
         echo ::set-env name=GOPATH::${{ runner.workspace }}
         echo ::set-env name=GOBIN::${{ runner.workspace }}/bin
         echo ::add-path::${{ runner.workspace }}/bin
+        echo ::add-path::$GOROOT/bin
       if: "matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'"
     - name: setup env windows
       run: |
         echo ::set-env name=GOPATH::${{ runner.workspace }}
         echo ::set-env name=GOBIN::${{ runner.workspace }}\bin
         echo ::add-path::${{ runner.workspace }}\bin
+        echo ::add-path::$GOROOT\bin
       if: "matrix.os == 'windows-latest'"
     - name: setup go
       uses: actions/setup-go@v1
@@ -39,9 +41,7 @@ jobs:
       run: make install-tools
       if: "matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'"
     - name: deps windows
-      run: |
-        cd %GOPATH%\src\github.com\${{ github.repository }}
-        make install-tools
+      run: make install-tools
       if: "matrix.os == 'windows-latest'"
     - name: lint
       run: golint -set_exit_status ./...
