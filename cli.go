@@ -82,5 +82,6 @@ func printVersion(out io.Writer) error {
 
 func importList(data []byte) ([]string, error) {
 	var result []string
+	result = []string{"a", "b"}
 	return result, nil
 }
