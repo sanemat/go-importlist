@@ -37,7 +37,9 @@ jobs:
       run: make install-tools
       if: "matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'"
     - name: deps windows
-      run: make download
+      run: |
+        go env
+        make install-tools
       if: "matrix.os == 'windows-latest'"
     - name: lint
       run: golint -set_exit_status ./...
