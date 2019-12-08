@@ -6,6 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
+	"strings"
 
 	"golang.org/x/xerrors"
 )
@@ -49,7 +50,6 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 		if err2 != nil {
 			return err2
 		}
-		fmt.Fprint(outStream, list)
 	} else { // stdin
 		if len(argv) >= 1 {
 			return xerrors.New("We have no subcommand")
@@ -58,10 +58,19 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 		if err2 != nil {
 			return err2
 		}
-		fmt.Fprint(outStream, list)
 	}
+
 	if *nullTerminators {
-		fmt.Fprintf(outStream, "null terminator")
+		fmt.Fprint(outStream, strings.Join(list, "\x00"))
+	} else {
+		last := len(list) - 1
+		for i, r := range list {
+			if i == last {
+				fmt.Fprint(outStream, r)
+			} else {
+				fmt.Fprintln(outStream, r)
+			}
+		}
 	}
 	return nil
 }
