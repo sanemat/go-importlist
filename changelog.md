@@ -6,6 +6,7 @@
 ## v0.1.0 - 2019-12-08
 ### Chore
 - **app:** rename to importlist
+- **changelog:** build
 - **changelog:** add newline
 - **changelog:** git-chglog --init
 - **cli:** add example
@@ -16,7 +17,10 @@
 - **tools:** fix xgoinstall
 
 ### Docs
+- **credits:** build
 - **design:** overview
+- **readme:** motivation
+- **readme:** build
 
 ### Feat
 - **cli:** parse text
@@ -29,6 +33,9 @@
 - **cli:** use nil or not
 
 ### Pull Requests
+- Merge pull request [#12](https://github.com/sanemat/go-importlist/issues/12) from sanemat/docs/credits
+- Merge pull request [#11](https://github.com/sanemat/go-importlist/issues/11) from sanemat/docs/readme
+- Merge pull request [#10](https://github.com/sanemat/go-importlist/issues/10) from sanemat/chore/changelog
 - Merge pull request [#9](https://github.com/sanemat/go-importlist/issues/9) from sanemat/chore/usage
 - Merge pull request [#8](https://github.com/sanemat/go-importlist/issues/8) from sanemat/refactor/stdin-case
 - Merge pull request [#6](https://github.com/sanemat/go-importlist/issues/6) from sanemat/feat/detect-import
