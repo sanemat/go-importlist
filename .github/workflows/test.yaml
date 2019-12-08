@@ -22,6 +22,7 @@ jobs:
     - name: setup env windows
       run: |
         echo ::set-env name=GOPATH::${{ runner.workspace }}\go
+        echo ::set-env name=GOBIN::${{ runner.workspace }}\go\bin
         echo ::add-path::${{ runner.workspace }}\go\bin
       if: "matrix.os == 'windows-latest'"
     - name: setup go
