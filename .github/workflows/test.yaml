@@ -34,7 +34,9 @@ jobs:
         fetch-depth: 1
         path: go/src/github.com/${{ github.repository }}
     - name: deps unix
-      run: make install-tools
+      run: |
+        go env
+        make install-tools
       if: "matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'"
     - name: deps windows
       run: |
