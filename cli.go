@@ -38,7 +38,7 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 	var list []string
 	var err2 error
 	argv = fs.Args()
-	if len(data) == 0 { // read file
+	if data == nil { // read file
 		if len(argv) != 1 {
 			return xerrors.New("require one target golang file")
 		}
