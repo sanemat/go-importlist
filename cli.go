@@ -21,7 +21,7 @@ func Run(argv []string, data []byte, outStream, errStream io.Writer) error {
 	fs := flag.NewFlagSet(nameAndVer, flag.ContinueOnError)
 	fs.SetOutput(errStream)
 	fs.Usage = func() {
-		fmt.Fprintf(fs.Output(), "Usage of %s:\n", nameAndVer)
+		fmt.Fprintf(fs.Output(), "Usage of %s:\n%s [OPTION]... [--] FILE\n", nameAndVer, cmdName)
 		fs.PrintDefaults()
 	}
 
