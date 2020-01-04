@@ -2,8 +2,39 @@
 ## [Unreleased]
 
 
+<a name="v0.1.2"></a>
+## [v0.1.2] - 2020-01-05
+### Chore
+- **actions:** support windows
+- **actions:** npx prettier --write
+- **dependabot:** use dependabot
+- **deps:** update deps
+- **deps:** reduce dependencies
+- **make:** use import-list
+- **makefile:** rename task
+- **test:** rename stub file
+
+### Refactor
+- **makefile:** refine
+- **tools:** move to tools/tools.go
+
+### Pull Requests
+- Merge pull request [#27](https://github.com/sanemat/go-importlist/issues/27) from sanemat/chore/rename-test-file
+- Merge pull request [#26](https://github.com/sanemat/go-importlist/issues/26) from sanemat/chore/deps
+- Merge pull request [#25](https://github.com/sanemat/go-importlist/issues/25) from sanemat/chore/go-mod
+- Merge pull request [#24](https://github.com/sanemat/go-importlist/issues/24) from sanemat/refactor/tools-go
+- Merge pull request [#23](https://github.com/sanemat/go-importlist/issues/23) from sanemat/refactor/makefile
+- Merge pull request [#21](https://github.com/sanemat/go-importlist/issues/21) from sanemat/chore/dependabot
+- Merge pull request [#20](https://github.com/sanemat/go-importlist/issues/20) from sanemat/chore/yaml
+- Merge pull request [#19](https://github.com/sanemat/go-importlist/issues/19) from sanemat/chore/windows2
+- Merge pull request [#13](https://github.com/sanemat/go-importlist/issues/13) from sanemat/chore/use-importlist
+
+
 <a name="v0.1.1"></a>
 ## [v0.1.1] - 2019-12-08
+### Docs
+- **changelog:** build v0.1.1
+
 ### Fix
 - **cli:** change detection of stdin
 
@@ -56,5 +87,6 @@
 - Merge pull request [#1](https://github.com/sanemat/go-importlist/issues/1) from sanemat/chore/rename
 
 
-[Unreleased]: https://github.com/sanemat/go-importlist/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/sanemat/go-importlist/compare/v0.1.2...HEAD
+[v0.1.2]: https://github.com/sanemat/go-importlist/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/sanemat/go-importlist/compare/v0.1.0...v0.1.1
