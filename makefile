@@ -9,20 +9,22 @@ test: download
 
 .PHONY: download
 download:
-	go mod download
+	go mod download && \
 	go mod tidy
 
 .PHONY: install-tools
 install-tools: download
 	go install \
 	github.com/sanemat/go-importlist/cmd/import-list \
-	github.com/sanemat/go-xgoinstall/cmd/x-go-install
+	github.com/sanemat/go-xgoinstall/cmd/x-go-install \
+	; \
 	import-list -z tools.go | x-go-install -0
 
 .PHONY: goimports
 goimports:
 	goimports -w .
 
+.PHONY: echo
 echo:
 	echo ${VERSION} ${BUILD_LDFLAGS}
 
@@ -43,6 +45,6 @@ crossbuild:
 upload:
 	ghr v$(VERSION) dist/v$(VERSION)
 
-.PHONY: credits
-credits:
+.PHONY: credits.txt
+credits.txt:
 	gocredits . > credits.txt
