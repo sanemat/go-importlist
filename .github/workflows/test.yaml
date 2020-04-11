@@ -14,29 +14,30 @@ jobs:
           - macOS-latest
           - windows-latest
     steps:
-      - name: setup go
-        uses: actions/setup-go@v1
-        with:
-          go-version: 1.x
       - name: setup env
         run: |
-          echo "::set-env name=GOPATH::$(go env GOPATH)"
-          echo "::add-path::$(go env GOPATH)/bin"
+          echo "::set-env name=GOPATH::${{ github.workspace }}"
         shell: bash
-      - name: checkout
-        uses: actions/checkout@v1
+      - name: setup go
+        uses: actions/setup-go@v2.0.3
         with:
-          fetch-depth: 1
+          go-version: 1.x
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
           path: src/github.com/${{ github.repository }}
       - name: deps
-        run: make install-tools
+        run: |
+          cd $GOPATH/src/github.com/${{ github.repository }}
+          make install-tools
+        shell: bash
       - name: lint
-        run: golint -set_exit_status ./...
+        run: |
+          cd $GOPATH/src/github.com/${{ github.repository }}
+          golint -set_exit_status ./...
+        shell: bash
       - name: test
-        run: go test -coverprofile coverage.out -covermode atomic ./...
-      - name: Convert coverage to lcov
-        uses: jandelgado/gcov2lcov-action@v1.0.0
-        with:
-          infile: coverage.out
-          outfile: coverage.lcov
-        if: "matrix.os == 'ubuntu-latest'"
+        run: |
+          cd $GOPATH/src/github.com/${{ github.repository }}
+          go test -coverprofile coverage.out -covermode atomic ./...
+        shell: bash
