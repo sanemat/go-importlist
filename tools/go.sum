@@ -130,6 +130,8 @@ github.com/russross/blackfriday/v2 v2.0.1 h1:lPqVAte+HuHNfhJ/0LC98ESWRz8afy9tM/0
 github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/sanemat/go-importlist v0.1.1 h1:emFBbia45YVXb7fU8a3P3TJ0Vsgo/cW4mcFit4X+hRw=
 github.com/sanemat/go-importlist v0.1.1/go.mod h1:Whxg4K/iGskk6q6RmLvgF9JWHZDyHsUGmfSqYTBCyXQ=
+github.com/sanemat/go-importlist v0.1.2 h1:/RN7A++qE/jOEz6V8MYL4CDHtJqbaM4zqHw8B4LLMgQ=
+github.com/sanemat/go-importlist v0.1.2/go.mod h1:pHQp2IMskGXVM2hV8rlxZAMfl1pJbbF75w1JWhtepp4=
 github.com/sanemat/go-xgoinstall v0.1.0 h1:rymt9tqoFLF6ZPmXyafA/WL4EJUb4BaGhjKnc5jykA0=
 github.com/sanemat/go-xgoinstall v0.1.0/go.mod h1:Q96ZcfAhMRyklb6oud6bBGH/58fnBALDA+JUmMsgvOE=
 github.com/sanemat/go-xgoinstall v0.1.1 h1:KjxnKLRqPGJ6XPkiK/lszqZUt1QmTBd9n7PDPA7mPSw=
