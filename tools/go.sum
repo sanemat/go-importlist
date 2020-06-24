@@ -9,6 +9,8 @@ github.com/Songmu/gocredits v0.1.0 h1:kvF4MYjGXpts+FhxlfmI15mHh0PApML9u7qQU91goY
 github.com/Songmu/gocredits v0.1.0/go.mod h1:5OhTh3YD/zUrdWAYuhMO2n3m7Ql+xRAnRLIGUEFABpQ=
 github.com/Songmu/goxz v0.5.0 h1:JZDtkrHii2pCMnj4YAsJ9OT3WhzcK8GAlVk+iOOxF+g=
 github.com/Songmu/goxz v0.5.0/go.mod h1:VRDXcyc8lMi8axfe6SSI6hpg2XWGpKARWgvJBv4WtLI=
+github.com/Songmu/goxz v0.6.0 h1:I08xXVriE93kFquOWRzzykvEDdbIsIqw5u4R/HVnwmk=
+github.com/Songmu/goxz v0.6.0/go.mod h1:w3B0/8DQ/SwHp9uAL9iEY0nJOWv/fWpfS/vxDSIM/PU=
 github.com/Songmu/retry v0.1.0 h1:hPA5xybQsksLR/ry/+t/7cFajPW+dqjmjhzZhioBILA=
 github.com/Songmu/retry v0.1.0/go.mod h1:7sXIW7eseB9fq0FUvigRcQMVLR9tuHI0Scok+rkpAuA=
 github.com/alecthomas/gometalinter v3.0.0+incompatible h1:e9Zfvfytsw/e6Kd/PYd75wggK+/kX5Xn8IYDUKyc5fU=
@@ -116,8 +118,12 @@ github.com/pelletier/go-toml v1.2.0 h1:T5zMGML61Wp+FlcbWjRDT7yAxhJNAiPPLOFECq181
 github.com/pelletier/go-toml v1.2.0/go.mod h1:5z9KED0ma1S8pY6P1sdut58dfprrGBbd/94hg7ilaic=
 github.com/pierrec/lz4 v2.3.0+incompatible h1:CZzRn4Ut9GbUkHlQ7jqBXeZQV41ZSKWFc302ZU6lUTk=
 github.com/pierrec/lz4 v2.3.0+incompatible/go.mod h1:pdkljMzZIN41W+lC3N2tnIh5sFi+IEE17M5jbnwPHcY=
+github.com/pierrec/lz4 v2.4.0+incompatible h1:06usnXXDNcPvCHDkmPpkidf4jTc52UKld7UPfqKatY4=
+github.com/pierrec/lz4 v2.4.0+incompatible/go.mod h1:pdkljMzZIN41W+lC3N2tnIh5sFi+IEE17M5jbnwPHcY=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/russross/blackfriday/v2 v2.0.1 h1:lPqVAte+HuHNfhJ/0LC98ESWRz8afy9tM/0RK8m9o+Q=
