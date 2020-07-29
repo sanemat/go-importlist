@@ -7,6 +7,8 @@ github.com/Netflix/go-expect v0.0.0-20180615182759-c93bf25de8e8 h1:xzYJEypr/85nB
 github.com/Netflix/go-expect v0.0.0-20180615182759-c93bf25de8e8/go.mod h1:oX5x61PbNXchhh0oikYAH+4Pcfw5LKv21+Jnpr6r6Pc=
 github.com/Songmu/gocredits v0.1.0 h1:kvF4MYjGXpts+FhxlfmI15mHh0PApML9u7qQU91goYw=
 github.com/Songmu/gocredits v0.1.0/go.mod h1:5OhTh3YD/zUrdWAYuhMO2n3m7Ql+xRAnRLIGUEFABpQ=
+github.com/Songmu/gocredits v0.2.0 h1:AbvFKEbwP5/0qisF0cTlUwVuCtzbJG+ynsXuEUC98vI=
+github.com/Songmu/gocredits v0.2.0/go.mod h1:JBywHzwOmBMF9uidu1EgS3mwVNqZCKOPLPrFd1h7qQo=
 github.com/Songmu/goxz v0.5.0 h1:JZDtkrHii2pCMnj4YAsJ9OT3WhzcK8GAlVk+iOOxF+g=
 github.com/Songmu/goxz v0.5.0/go.mod h1:VRDXcyc8lMi8axfe6SSI6hpg2XWGpKARWgvJBv4WtLI=
 github.com/Songmu/goxz v0.6.0 h1:I08xXVriE93kFquOWRzzykvEDdbIsIqw5u4R/HVnwmk=
