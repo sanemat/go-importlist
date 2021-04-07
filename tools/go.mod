@@ -4,7 +4,7 @@ go 1.13
 
 require (
 	github.com/Songmu/gocredits v0.2.0
-	github.com/Songmu/goxz v0.6.0
+	github.com/Songmu/goxz v0.7.0
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/git-chglog/git-chglog v0.14.0
