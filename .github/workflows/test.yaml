@@ -19,7 +19,7 @@ jobs:
           echo "GOPATH=${{ github.workspace }}" >> $GITHUB_ENV
         shell: bash
       - name: setup go
-        uses: actions/setup-go@v2.0.3
+        uses: actions/setup-go@v2
         with:
           go-version: 1.x
       - name: checkout
