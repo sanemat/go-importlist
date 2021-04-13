@@ -58,6 +58,7 @@ github.com/fsnotify/fsnotify v1.4.7 h1:IXs+QLmnXW2CcXuY+8Mzv/fWEsPGWxqefPtCP5CnV
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/git-chglog/git-chglog v0.14.0 h1:Y9kEX/pRjRDUBCCpkziVAEAo/e3Dj5+vhtHD7va+cl8=
 github.com/git-chglog/git-chglog v0.14.0/go.mod h1:QYJ8Ctd/bMkNX3R+AyZf2x0iF6InIZ6xEOqCOldbAOQ=
+github.com/git-chglog/git-chglog v0.14.1/go.mod h1:QYJ8Ctd/bMkNX3R+AyZf2x0iF6InIZ6xEOqCOldbAOQ=
 github.com/golang/protobuf v1.2.0 h1:P3YflyNX/ehuJFLhxviNdFxQPkGK5cDcApsge1SqnvM=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/snappy v0.0.1 h1:Qgr9rKW7uDUkrbSmQeiDsGa8SjGyCOGtuasMWwvp2P4=
