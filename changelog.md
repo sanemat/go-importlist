@@ -2,8 +2,52 @@
 ## [Unreleased]
 
 
+<a name="v0.2.0"></a>
+## [v0.2.0] - 2021-04-16
+### Chore
+- **actions:** use v2
+- **actions:** use environment files
+- **actions:** use setup-go v2
+- **deps:** update dependencies
+- **deps:** use ghr 0.13.0
+- **deps:** update git-chglog
+- **deps:** bump goxz to 0.7
+- **deps:** update tools
+- **deps:** bump github.com/Songmu/gocredits in /tools
+- **deps:** bump github.com/sanemat/go-importlist in /tools
+- **deps:** bump github.com/sanemat/go-xgoinstall in /tools
+- **deps:** bump github.com/Songmu/goxz from 0.5.0 to 0.6.0 in /tools
+- **makefile:** for changelog
+- **packages:** go mod tidy
+
+### Docs
+- **credits:** remove dev dependencies
+
+### Dependencies
+- Update dependencies
+
+### Pull Requests
+- Merge pull request [#45](https://github.com/sanemat/go-importlist/issues/45) from sanemat/chore/deps
+- Merge pull request [#44](https://github.com/sanemat/go-importlist/issues/44) from sanemat/chore/deps-tools
+- Merge pull request [#42](https://github.com/sanemat/go-importlist/issues/42) from sanemat/chore/goxz-0-7
+- Merge pull request [#41](https://github.com/sanemat/go-importlist/issues/41) from sanemat/chore/actions-setup-go
+- Merge pull request [#37](https://github.com/sanemat/go-importlist/issues/37) from sanemat/sanemat-patch-1
+- Merge pull request [#36](https://github.com/sanemat/go-importlist/issues/36) from sanemat/chore/actions-env
+- Merge pull request [#35](https://github.com/sanemat/go-importlist/issues/35) from sanemat/dependabot/go_modules/tools/github.com/Songmu/gocredits-0.2.0
+- Merge pull request [#32](https://github.com/sanemat/go-importlist/issues/32) from sanemat/dependabot/go_modules/tools/github.com/sanemat/go-importlist-0.1.2
+- Merge pull request [#34](https://github.com/sanemat/go-importlist/issues/34) from sanemat/dependabot/go_modules/tools/github.com/sanemat/go-xgoinstall-0.1.1
+- Merge pull request [#33](https://github.com/sanemat/go-importlist/issues/33) from sanemat/dependabot/go_modules/tools/github.com/Songmu/goxz-0.6.0
+- Merge pull request [#31](https://github.com/sanemat/go-importlist/issues/31) from sanemat/sanemat-patch-1
+- Merge pull request [#30](https://github.com/sanemat/go-importlist/issues/30) from sanemat/chore/actions-update
+- Merge pull request [#28](https://github.com/sanemat/go-importlist/issues/28) from sanemat/chore/changelog
+- Merge pull request [#29](https://github.com/sanemat/go-importlist/issues/29) from sanemat/chore/credits
+
+
 <a name="v0.1.2"></a>
 ## [v0.1.2] - 2020-01-05
+### App
+- **version:** bump version to v0.1.2
+
 ### Chore
 - **actions:** support windows
 - **actions:** npx prettier --write
@@ -87,6 +131,7 @@
 - Merge pull request [#1](https://github.com/sanemat/go-importlist/issues/1) from sanemat/chore/rename
 
 
-[Unreleased]: https://github.com/sanemat/go-importlist/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/sanemat/go-importlist/compare/v0.2.0...HEAD
+[v0.2.0]: https://github.com/sanemat/go-importlist/compare/v0.1.2...v0.2.0
 [v0.1.2]: https://github.com/sanemat/go-importlist/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/sanemat/go-importlist/compare/v0.1.0...v0.1.1
