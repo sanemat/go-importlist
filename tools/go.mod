@@ -17,3 +17,5 @@ require (
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616
 	golang.org/x/tools v0.7.0
 )
+
+replace github.com/sanemat/go-importlist => ../
